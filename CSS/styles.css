@@ -175,6 +175,10 @@ nav {
 
 .language{
     width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
 }
 
 .language__img--wrapper{
@@ -187,4 +191,27 @@ nav {
 .language__img{
     width: 100%;
     max-width: 100px;
+}
+
+.language__img{
+    transition: all 300ms ease;
+}
+
+.language:hover .language__img{
+    filter: brightness(80%);
+    opacity: 0.86;
+    transform: scale(0.9);
+}
+
+.language__name{
+    font-size: 20px;
+    position: absolute;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.language:hover .language__name{
+    transform: scale(1);
+    opacity: 1;
 }
