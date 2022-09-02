@@ -34,8 +34,12 @@ li{
 
 .row{
     width: 100%;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
+}
+
+section:nth-child(even) {
+    background-color: #f8f8f8;
 }
 
 /* BARRA DE NAVEGACIÓN */
@@ -152,4 +156,35 @@ nav {
 .about-me__img{
     width: 100%;
     padding: 24px;
+}
+
+/* SECCIÓN LANGUAGES */
+
+.languages__container{
+    padding: 50px 0;
+}
+
+.section__title{
+    margin-bottom: 20px;
+}
+
+.language__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.language{
+    width: 25%;
+}
+
+.language__img--wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 26px 16px;
+}
+
+.language__img{
+    width: 100%;
+    max-width: 100px;
 }
